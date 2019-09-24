@@ -7,6 +7,17 @@ function setup() {
   background(40, 200, 80);
 
 
+// 1) introduce arrays
+// 2) array of numbers
+// 3) access array with bracket notation
+// 4) create array of strings
+// 5) add / change items  with bracket notation
+// 6) intro methonds: push / pop
+// 7) shift / unshift
+// 8) splice: // splice = can squeeze things in middle of array (not just beginning and end)
+// 9) AND you can delete from inside array with second parameter
+
+
   // strange - the console.log includes the unshifted array...
 
   console.log(dogs);
@@ -35,8 +46,7 @@ console.log(dogs.length);
 dogs[dogs.length] = "new dog";
 
 // splice = can squeeze things in middle of array (not just beginning and end)
-
-// AND you can delete from inside array
+// AND you can delete from inside array with second parameter
 
 console.log(dogs);
 
@@ -54,6 +64,7 @@ console.log(random(dogs)); // random element from array - but we don't have it's
 console.log(random(5));
 
 console.log(Math.floor(random(5)));
+// same as console.log(int(random(5)));
 
 let spliceIndex = Math.floor(random(dogs.length));
 

@@ -1,0 +1,38 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww19820\viewh19180\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \
+vid 1\
+// 1) introduce arrays\
+// 2) array of numbers + strings\
+// 3) access array with bracket notation\
+// 4) create array of dog names\
+// 5) add / change items  with bracket notation\
+// 5.1) access length of array with array.length\
+// 6) intro methonds: push / pop\
+// 7) shift / unshift\
+// 8) splice: you can delete from inside array: splice(indexToDelete, howManyToDelete) with second parameter\
+// 9) note: with splice, you can squeeze things in middle of array (not just beginning and end) with a third parameter (the things you want to add), or delete one or more from end\
+\
+vid 2\
+1) access property of objects\
+2) create array of objects \
+3) access property of object in array\
+4) print this to screen with text\
+\
+// random items from array\
+1) random(array)\
+2) more complicated: we have to get a random item, then delete it!\
+3) several ways to do this, the way we will choose to do this is to store the index number, then use that to delete the item\
+4) random index: random returns float. need to convert to int.\
+5) Tada!!!!\
+\
+var list = ["foo", "bar"];\
+list.splice( 1, 0, "baz"); // at index position 1, remove 0 elements, then add "baz" to that position\
+                           // element "bar" will now automatically be moved to index position 2\
+["foo", "baz", "bar"] // result\
+}
