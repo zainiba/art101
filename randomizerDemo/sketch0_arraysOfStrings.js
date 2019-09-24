@@ -6,27 +6,14 @@ function setup() {
   createCanvas(600, 600);
   background(40, 200, 80);
 
-
-// 1) introduce arrays
-// 2) array of numbers
-// 3) access array with bracket notation
-// 4) create array of strings
-// 5) add / change items  with bracket notation
-// 6) intro methonds: push / pop
-// 7) shift / unshift
-// 8) splice: // splice = can squeeze things in middle of array (not just beginning and end)
-// 9) AND you can delete from inside array with second parameter
-
-
   // strange - the console.log includes the unshifted array...
 
   console.log(dogs);
 
   console.log(dogs[0]);
 
-
   // hard code in
-  // dogs[3] = "tigerlily"
+  dogs[3] = "tigerlily"
 
 
   // methods
