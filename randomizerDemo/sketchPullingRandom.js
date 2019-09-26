@@ -32,6 +32,7 @@ function draw() {
 }
 
 function mousePressed() {
+  // this displays random and splices it out of array
   background(random(200, 255));
   randomIndex = int(random(dogs.length));
   text(dogs[randomIndex].name, 50, 50);
