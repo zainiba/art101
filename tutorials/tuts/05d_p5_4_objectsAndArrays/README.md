@@ -13,6 +13,7 @@
 2. What is an array?
 3. What is an object?
 4. Arrays of objects
+5. Class exercise: Array of rectangles
 
 ---
 <br>

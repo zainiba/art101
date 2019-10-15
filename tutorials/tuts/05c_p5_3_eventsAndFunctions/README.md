@@ -160,7 +160,7 @@ Use keyTyped() for alphanumeric keys.
 <br>
 
 
-## ▼△▼△▼ Creating functions
+## ▼△▼△▼ Writing functions
 
 As you write more code, you will need to break it into parts for legibility and ease of debugging.
 
@@ -178,7 +178,31 @@ To call the function, use the name of the function followed by parentheses.
 <br>
 
 
-## ▼△▼△▼ Exercise
+## ▼△▼△▼ Passing arguments into a function
+
+When you declare the function, you can pass arguments (also called parameters) into the function.
+
+
+For example, if you knew you were going to draw a LOT of rectangles, but all in different shades of gray, you could pass the color into the function.
+
+
+  function drawMyRectangle(\_color){
+    fill(\_color);
+    rect(100, 100, 100, 100);
+  }
+
+
+Then, when you *call* that function, you just fill in the color you want inside the function's paranthesis.
+
+  // draw a white rectangle
+  drawMyRectangle(255);
+
+  // draw a grey rectangle
+  drawMyRectangle(125);
+
+
+
+## ▼△▼△▼ Exercise: Super Mario Clouds
 
 The code to move the cloud is now in a user-defined move() function. The function move() is called in the draw loop whenever the mouse is pressed.
 
