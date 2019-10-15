@@ -177,7 +177,12 @@ To call the function, use the name of the function followed by parentheses.
     myFunctionName();
 <br>
 
+
+## ▼△▼△▼ Exercise
+
 The code to move the cloud is now in a user-defined move() function. The function move() is called in the draw loop whenever the mouse is pressed.
+
+***Exercise:*** *In pairs, look at the code and describe what it is doing.*
 
 
     let clouds;
@@ -203,8 +208,11 @@ The code to move the cloud is now in a user-defined move() function. The functio
 
 
     function move() {
-      x = x + speed;
+      // what movement would the below (commented out) line code create?
       // x++;
+
+      // what movement does this execute?
+      x = x + speed;
       if (x > width - 150 || x < -30) {
         speed = -speed;
       }

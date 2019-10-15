@@ -17,7 +17,7 @@ References and tutorials:
 
 dom tut: https://github.com/processing/p5.js/wiki/Beyond-the-canvas
 
-[p5.dom reference](https://p5js.org/reference/#/libraries/p5.dom)
+[p5.dom library now included as sub-section in main reference page](https://p5js.org/reference/#group-DOM)
 ---
 <br>
 
@@ -29,7 +29,7 @@ DOM stands for Document Object Model. It is a tree structure for identifying par
 
 <br>
 
-Using the [p5.dom library](https://p5js.org/reference/#/libraries/p5.dom), you can have your p5 sketch interact with the HTML on a webpage. Without the p5.dom library, your p5 canvas is independent of the rest of the HTML. With access to the DOM, you can dynamically create buttons, input fields, sliders, headers, text, etc — outside the canvas.
+Using the [p5.dom library](https://p5js.org/reference/#group-DOM), you can have your p5 sketch interact with the HTML on a webpage. Without the p5.dom library, your p5 canvas is independent of the rest of the HTML. With access to the DOM, you can dynamically create buttons, input fields, sliders, headers, text, etc — outside the canvas.
 
 Better yet, you can access user input and store them as variables in your p5 sketch.    
 
@@ -39,14 +39,20 @@ Better yet, you can access user input and store them as variables in your p5 ske
 
 ## ▼△▼△▼ Create Paragraphs
 
-[p5.dom library](https://p5js.org/reference/#/libraries/p5.dom)
+[createP()](https://p5js.org/reference/#/p5/createP)
+
+ie. createP('this is some text');
 
 - exercise in dynamically creating p elements
 - write text to array then display in forloop
 
 ## ▼△▼△▼ Create buttons
 
-- display text and have something appear in canvas when button is pushed
+[createButton()](https://p5js.org/reference/#/p5/createButton)
+
+Note: In online demo, they store the button created in a variable... That way you can call methods to it! Like button.mousePressed() 
+
+- try having something appear in canvas when button is pushed...
 
 
 ## ▼△▼△▼ Using input

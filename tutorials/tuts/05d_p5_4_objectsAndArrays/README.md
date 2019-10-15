@@ -21,24 +21,33 @@
 
 ## Text-based
 
-* [Mozilla Developer Network (MDN) intro to Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
-  - [MDN Array reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-* [MDN intro to Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+* MDN
+  * [Mozilla Developer Network (MDN) intro to Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
+    - [MDN Array reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+  * [MDN intro to Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+
+* JavaScript.info
+  * [Documentation on objects](https://javascript.info/object)
+  * [Documentation on arrays](https://javascript.info/array)
+
+* [Allison Parish tutorial w/ executable code](https://creative-coding.decontextualize.com/arrays-and-objects/)
+
 
 ## Videos
 
 Coding Train
 * [7.1 What is an Array](https://www.youtube.com/watch?v=VIQoUghHSxU)
-https://creative-coding.decontextualize.com/arrays-and-objects/
+
 * [7.2 Arrays and loops](https://www.youtube.com/watch?v=RXWO3mFuW-I&t=1s)
-* [7.3 Arrays of Objects](https://www.youtube.com/watch?v=fBqaA7zRO58) --> This assumes you already know what objects are
+* [7.3 Arrays of Objects](https://www.youtube.com/watch?v=fBqaA7zRO58)
 <br>
+
 
 ## ▼△▼△▼ What is an array?
 
-An array is an object that stores a list of values. Sometimes
+An array is an object that stores a list of comma-separated values.  
 
-It is basically a super handy list of variables that you can access individually and loop over, so that you don't have to declare each variable on its own.
+It is basically a super-handy way of storing multiple values in a single variable, so that you don't have to declare each one as a variable on its own. You can access each value of the array individually and loop over them. You can add elements to the beginning / end of arrays, splice things in and out of them, and more!
 
 Arrays are constructed with square brackets. Inside the brackets are comma-separated values.
 
@@ -138,6 +147,7 @@ View more methods on the [MDN Array reference page.](https://developer.mozilla.o
 
 .splice() removes items from the array
 <br>
+
 
 #### Attributes
 
@@ -276,8 +286,42 @@ Save mouse x and y positions in the mousePressed() function and push them to an 
 
 Use a for loop to draw the rectangles in the draw function, changing their y value in every loop.
 
-Code below...
+Starting code here, finished code below...
 
+  let rectangles = [];
+
+  function setup() {
+    createCanvas(500, 500);
+  }
+
+  function mousePressed() {
+    // push an object with the mouse position and a random color
+    // to the rectangles array
+    rectangles.push({posX: mouseX, posY: mouseY, color: random(255)})
+  }
+
+  function draw() {
+    background(200, 100, 50);
+
+    // draw all rectangles every draw loop
+    for (let i = 0; i < rectangles.length; i++) {
+
+      // first, draw them by accessing the color and position properties of each object in the array
+      // hint: you will use the fill() and rect() functions here
+
+      // make them fall by changing their y position every loop
+
+    }
+  }
+
+v
+v
+v
+v
+v
+v
+v
+v
 v
 v
 v
@@ -313,6 +357,7 @@ v
       for (let i = 0; i < rectangles.length; i++) {
         fill(rectangles[i].color);
         rect(rectangles[i].posX, rectangles[i].posY, 100, 100);
+
         // make them fall by changing their y position every loop
         rectangles[i].posY += 2;
       }

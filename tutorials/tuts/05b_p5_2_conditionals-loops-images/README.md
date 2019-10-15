@@ -22,7 +22,8 @@
 ##### (If statements)
 
 <br>
-#### BOOLEAN EXPRESSION
+
+#### BOOLEAN EXPRESSIONS
 
 Booleans are expressions that evaluate to true or false.
 
@@ -242,6 +243,7 @@ Will loop as long as condition is true! Just make sure there is an exit conditio
 
 <br>
 
+
 #### for loop
 
 loops a given number of times
@@ -306,16 +308,20 @@ If your image was named something else it would be:
 
 somethingElse.width/2
 
+
 # ▼△▼△▼ Displaying GIFs
 
 To display GIFs, you have to install a [separate p5 library](https://github.com/antiboredom/p5.gif.js/tree/master) that supports GIFs. To install, copy the library into your libraries folder and make sure it is linked to in your index.html.
 
-***Note:*** *This library works in Chrome, but might not work in other browsers. If you are going to have many animated sprites, you might want to use the [p5.play library](../10-p5Play-sprites) (though it is little more work to set up).*
+***Note:*** *This library works in Chrome, but might not work in other browsers. If you find a better way to display gifs in a P5 canvas lmk!*
+
+*Animated Sprites:* If you are going to have many animated sprites, you might want to use the [p5.play library](../10-p5Play-sprites) (though it is little more work to set up). Dan Schiffman also has a tutorial on displaying animated sprites
+
 
 # ▼△▼△▼ Super Mario clouds In-class-exercise
 
 Make an image move from one side of screen to the other. You will need to store the image in a variable, then make its location move in the draw loop. Use an **if statement** to check to see if it has reached the end of the screen.
 
-You can use the Super Mario Clouds pngs in the assets folder of this tutorial, or any other image you choose. Save the image inside your p5 sketch folder and make sure it is loading from the correct file path.
+You can use the [Super Mario Clouds pngs](assets/clouds.zip) in the assets folder of this tutorial, or any other image you choose. Save the image inside your p5 sketch folder and make sure it is loading from the correct file path.
 
-If you want, try running your sketch over the full screen, perhaps over some html on your webpage! The zip for a full screen sketch is in the assets folder: [p5-blankExample_fullScreen.zip](assets/p5-blankExample_fullScreen.zip)
+If you want, try running your sketch over the full screen, perhaps over some html on your webpage! The zip for a full screen sketch can be found on the [course webpage](https://larkvcr.com/art101/).
