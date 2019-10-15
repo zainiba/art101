@@ -1,8 +1,9 @@
 
 # Tutorials 📝
 
+---> Live demos and sample code on the [course webpage](https://larkvcr.com/art101/)
 
-Check out links to suggested web tutorials on the [resources page](../resources).
+This page *might* have some broken links - apologies
 
 #### 🛠 HOT TIP: Learn to teach yourself
 ***Technologies are constantly changing — figure out how to access resources online.***
@@ -17,20 +18,6 @@ Check out links to suggested web tutorials on the [resources page](../resources)
 
 <br>
 
-**Premiere Pro & After Effects**
-* [Premiere](tuts/01_Premiere)
-* [Premiere Continued](tuts/01b_PremiereContinued)
-* [Premiere Dynamic Links and Still Images](tuts/01c_PremiereDynamicLinks)
-* [Premiere Quick Tips](tuts/01d_PremiereQuickTips)
-* [Intro to After Effects](tuts/01e_afterEffects)
-
-**Shooting, Recording, and Lighting**
-* [Shooting DSLR](tuts/02a_shootingDSLR)
-* [Shooting with FilmicPro](tuts/02b_shootingFilmicPro)
-* [Recording Audio](tuts/02c_recordingAudio)
-* [Filmic Conventions (types of shots and continuity editing)](tuts/02d_filmicConventions)
-* [Lighting and Green Screens](tuts/02f_lightingAndGreenScreen)
-
 
 **Web Development Basics**
 * [HTML/CSS Basics](tuts/03c_introToHTMLCSS)
@@ -44,16 +31,14 @@ Check out links to suggested web tutorials on the [resources page](../resources)
 
 
 
-**Portfolio Website**
+**Hosting your website through GitHub**
 * [Creating a GitHub personal page to host your portfolio](tuts/03a_gitHubPageSetup)
 * [Using GitHub Desktop and Atom to write code and sync your files](tuts/03b_gitHubDesktop-atom)
+* [Making your repositories show as live GitHub pages](tuts/04a_netArt_repositorySetup)
 * [Portfolio Website Content Guides](tuts/03e_WebPortfolio_Content)
   * [Artist Statements & Descriptions](https://github.com/art75/SJSU-art75/tree/master/tutorials/tuts/03e_WebPortfolio_Content#artist-statements)
 
-**Critical Interactivity Project**
-* [Creating a GitHub page to host your Project 3](tuts/04a_netArt_repositorySetup)
-* [See demos and download code](https://art75.github.io/)
-* [Interactive Video with P5](tuts/05h_interactiveVideoWithP5)
+
 
 **Javascript and p5- Creating Interactivity**
 * [p5 pt 1: Getting Started with p5](tuts/05a_p5_1_gettingStarted)
@@ -66,4 +51,3 @@ Check out links to suggested web tutorials on the [resources page](../resources)
 
 **Other Tutorials**
 * [Downloading Online Material + Using Creative Commons](tuts/Creative_Commons)
-* [Mad Mapper Projection Mapping](tuts/MadMapper)
