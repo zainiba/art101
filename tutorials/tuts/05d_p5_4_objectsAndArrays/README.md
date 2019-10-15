@@ -98,7 +98,9 @@ Here is an example of an empty array that we can add things to.
     console.log(emptyList);
 
 
-Better yet, we could add A LOT of things to it using a loop.
+Better yet, we could add A LOT of things to an array using a single loop.
+
+*What does this code do?*
 
     // empty array
     let listOfThrees = [];
@@ -160,6 +162,23 @@ Arrays also have attributes you can access.
       console.log("I need a " + myShoppingList[i])
     }
 
+<br>
+
+#### Looping through arrays
+
+You can loop through all the values of an array in a for loop!
+
+This loop will log each array element to the console. The .length method will return the length of the array.
+
+
+  for (let i = 0; i < array.length; i++){
+    console.log(array[i]);
+  }
+
+
+Guess what!? There is also something called a forEach loop... It is a little more concise than writing out a for loop... check it out in JavaScript documentation online.
+
+<br>
 <br>
 
 ## ▼△▼△▼ What is an object?
