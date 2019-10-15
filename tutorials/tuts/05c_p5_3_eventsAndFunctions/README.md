@@ -186,19 +186,19 @@ When you declare the function, you can pass arguments (also called parameters) i
 For example, if you knew you were going to draw a LOT of rectangles, but all in different shades of gray, you could pass the color into the function.
 
 
-  function drawMyRectangle(\_color){
-    fill(\_color);
-    rect(100, 100, 100, 100);
-  }
+    function drawMyRectangle(\_color){
+      fill(\_color);
+      rect(100, 100, 100, 100);
+    }
 
 
 Then, when you *call* that function, you just fill in the color you want inside the function's paranthesis.
 
-  // draw a white rectangle
-  drawMyRectangle(255);
+    // draw a white rectangle
+    drawMyRectangle(255);
 
-  // draw a grey rectangle
-  drawMyRectangle(125);
+    // draw a grey rectangle
+    drawMyRectangle(125);
 
 
 
@@ -244,25 +244,3 @@ The code to move the cloud is now in a user-defined move() function. The functio
 
 <br>
 <br>
-
-## ▼△▼△▼ Passing arguments into a function
-
-You can also pass arguments into a function you write. These are defined within the parentheses and called in the function.
-
-For example, we could write a function that takes two arguments and logs them to the console.
-
-    function howManyThings(number, things){
-      console.log("there are " + number + things);
-    }
-
-<br>
-
-If you were to call this function with the arguments 3 and 'ducks':
-
-    howManyThings(3, 'ducks');
-
-<br>
-
-The console would print:
-
-    > there are 3 ducks
