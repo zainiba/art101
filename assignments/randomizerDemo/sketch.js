@@ -23,6 +23,7 @@ let randomIndex;
 let animating = false;
 let trolls = [];
 let imageCounter = 0;
+let button;
 
 function preload() {
 
@@ -44,7 +45,9 @@ function setup() {
   frameRate(8);
 
   text("click to randomize", width/2, height/2);
-  console.log(trolls);
+
+  button = createButton("click to randomize");
+  button.mousePressed(buttonPressed);
 }
 
 function draw() {
@@ -83,7 +86,7 @@ function randomizer() {
 
 
 
-function mousePressed() {
+function buttonPressed() {
   animating = true;
   setTimeout(randomizer, 2000);
 }
