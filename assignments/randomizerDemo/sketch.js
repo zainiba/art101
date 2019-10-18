@@ -1,40 +1,30 @@
 // dogs I have loved before
-let dogs = [{
-  name: "dillon",
-  color: "dog treat color"
-}, {
-  name: "Ziggy",
-  color: "chartrese"
-}, {
-  name: "mercedes",
-  color: "poop"
-}, {
-  name: "petunia",
-  color: "rose gold"
-}, {
-  name: "kloot",
-  color: "coffee grind brown"
-}, {
-  name: "nala",
-  color: "stardust"
-}];
+let dogs = [];
 
 let randomIndex;
 let animating = false;
 let trolls = [];
 let imageCounter = 0;
-let button;
+let startRandomizerButton;
+let addMoreButton;
+let cnv;
+let nameInputs = [];
+let firstTime = true;
+
 
 function preload() {
 
+
   for (let i = 0; i <= 15; i++) {
+    // trolls[i] = loadImage("assets/troll_" + i + ".JPG")
     trolls[i] = loadImage(`assets/troll_${i}.JPG`)
   }
-
 }
 
 function setup() {
-  createCanvas(600, 600);
+  cnv = createCanvas(384, 512);
+  cnv.parent("#canvasDiv");
+
   background(20, 40, 200);
   textSize(36);
   textFont('Courier new');
@@ -44,14 +34,22 @@ function setup() {
   imageMode(CENTER);
   frameRate(8);
 
-  text("click to randomize", width/2, height/2);
 
-  button = createButton("click to randomize");
-  button.mousePressed(buttonPressed);
+  startRandomizerButton = select('#randButton')
+  startRandomizerButton.mousePressed(buttonPressed);
+
+  addMoreButton = select('#addMoreButton')
+  addMoreButton.mousePressed(addAnotherInput);
+
+
+  for (let i = 0; i < 3; i++) {
+    nameInputs.push(createInput());
+    nameInputs[nameInputs.length - 1].parent("#inputFields");
+  }
 }
 
-function draw() {
 
+function draw() {
 
   if (animating == true) {
     clear();
@@ -59,12 +57,16 @@ function draw() {
 
     if (imageCounter < trolls.length - 1) {
       imageCounter++;
-      console.log(imageCounter);
     } else {
       imageCounter = 0;
     }
   }
 
+}
+
+function addAnotherInput() {
+  nameInputs.push(createInput());
+  nameInputs[nameInputs.length - 1].parent("#inputFields");
 }
 
 function randomizer() {
@@ -76,7 +78,7 @@ function randomizer() {
     randomIndex = int(random(dogs.length));
 
     image(random(trolls), width / 2, height / 2);
-    text(dogs[randomIndex].name, width / 2, height - 55);
+    text(dogs[randomIndex], width / 2, height - 25);
     dogs.splice(randomIndex, 1);
   } else {
     background(20, 40, 200);
@@ -87,6 +89,14 @@ function randomizer() {
 
 
 function buttonPressed() {
+
+  if (firstTime) {
+    for (let i = 0; i < nameInputs.length; i++) {
+      dogs.push(nameInputs[i].value());
+    }
+    firstTime = false;
+  }
+
   animating = true;
   setTimeout(randomizer, 2000);
 }
