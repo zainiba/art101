@@ -1,14 +1,22 @@
+let checkboxes = [];
+let size = 100;
 
 function setup() {
-	// make canvas full screen
-	createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);
 
+  for (let i = 0; i < 100; i++) {
+    checkboxes[i] = createCheckbox('')
+		checkboxes[i].style('display', 'inline');
+		checkboxes[i].position(random(windowWidth), random(windowHeight));
+		checkboxes[i].changed(myCheckedEvent);
+  }
 }
 
+function myCheckedEvent(){
+	size += 50;
+}
 
 function draw() {
-	// adding clear() to the draw loop will clear each frame, erasing object trails
-	// clear();
 
-	ellipse(mouseX, mouseY, 100);
+  ellipse(mouseX, mouseY, size);
 }

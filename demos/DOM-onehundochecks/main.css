@@ -14,5 +14,5 @@ canvas {
   left: 0;
   position: absolute;
   /* uncomment next line to position the canvas BEHIND the HTML */
-  /* z-index: -1; */
+  z-index: -1;
 }
