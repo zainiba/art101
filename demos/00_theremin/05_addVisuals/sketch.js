@@ -3,10 +3,13 @@
 let osc;
 let selectWaveform;
 let pNoise;
-let tileCount = 33;
+let tileCount = 8;
+let from;
+let to;
 
 
 function setup() {
+  frameRate(6);
   createCanvas(windowWidth, windowHeight);
   osc = new p5.Oscillator('square');
 
@@ -16,10 +19,15 @@ function setup() {
   selectWaveform.option('triangle');
   selectWaveform.option('sawtooth');
   selectWaveform.option('square');
+
+noStroke();
+colorMode(HSB);
+  from = color(218, 165, 32);
+  to = color(72, 61, 139);
 }
 
 function draw() {
-  background(220);
+  background(20);
   osc.setType(selectWaveform.value());
 
   // control frequency - audible range of frequency is 20-2000hz
@@ -55,12 +63,15 @@ function drawGrid() {
       let posX = width / tileCount * i;
       let posY = width / tileCount * j;
 
-      let shiftX = random(-pNoise, pNoise) / 20;
-      let shiftY = random(-pNoise, pNoise) / 20;
-      // let shiftX = random(-mouseX, mouseX) / 20;
-      // let shiftY = random(-mouseX, mouseX) / 20;
 
-      ellipse(posX + shiftX, posY + shiftY, mouseY / 15, mouseX / 15);
+      // console.log(map(mouseX, 0, width, 60, 2000) + pNoise);
+      // let shiftX = i * windowHeight / mouseX;
+      // let shiftY = j * windowHeight / mouseY;
+      let shiftX = random(-mouseX, mouseX) / 20;
+      let shiftY = random(-mouseY, mouseY) / 20;
+
+      fill(lerpColor(from, to, i / tileCount));
+      ellipse(posX + shiftX, posY + shiftY, mouseY / 8, mouseX / 8);
 
     }
   }
