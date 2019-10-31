@@ -30,7 +30,6 @@ function draw() {
 
   // to draw shape
   // rect(50, 50, mouseX - 50, mouseY - 50);
-  // next step - can you make this look like a theramin? https://www.youtube.com/watch?v=rdiYbCyQ4do
 }
 
 function mousePressed() {

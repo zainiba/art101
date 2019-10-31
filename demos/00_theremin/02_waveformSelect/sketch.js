@@ -30,6 +30,8 @@ function draw() {
   // to draw shape
   // rect(50, 50, mouseX - 50, mouseY - 50);
   // next step - can you make this look like a theramin? https://www.youtube.com/watch?v=rdiYbCyQ4do
+  // might need to have multitouch on mobile!! https://editor.p5js.org/dano/sketches/Sk1UY7tee
+
 }
 
 function mousePressed() {
